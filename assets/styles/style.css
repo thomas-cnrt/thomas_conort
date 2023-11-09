@@ -1,0 +1,33 @@
+/* styles.css */
+
+/* Dark Theme */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    /* Dark background color */
+    background-color: #333;
+    /* White text color */
+    color: #fff;
+}
+
+header {
+    /* Slightly darker header background */
+    background-color: #222;
+    padding: 10px;
+}
+
+footer {
+    background-color: #222;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    /* Adjust icon size */
+    font-size: 24px;
+}
