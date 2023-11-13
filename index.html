@@ -1,41 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Personal website of Thomas Conort">
     <meta name="keywords" content="Thomas Conort, website, portfolio">
     <meta name="author" content="Thomas Conort">
     <title>Thomas Conort</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon2.ico">
-    <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
-    <script src="assets/scripts/script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="src/images/worker.ico">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
-<body>
-    <header>
-        <h1>Welcome to my website</h1>
-        <div class="switch">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-            </label>
-        </div>
-    </header>
-    <div id="content">
-        <p>Welcome to my personal website! This space is where I share my journey as an Embedded Software Engineer and
-            showcase various programming projects.</p>
-    </div>
-</body>
+<body id="top" class="is-boxed has-animations">
+    <div class="body-wrap">
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+                        <div class="hero-copy">
+                            <h1 class="hero-title mt-0">Thomas Conort - Embedded Software Engineer</h1>
+                            <p class="hero-paragraph">Welcome to my website! This space is where I share my
+                                journey as an Embedded Software Engineer and showcase various programming projects.
+                            </p>
+                            <div class="hero-cta">
+                                <a class="button button-primary" href="#my-projects">My projects</a>
+                                <a class="button" href="https://www.linkedin.com/in/thomas-conort/" target="_blank">Get
+                                    in touch</a>
+                            </div>
+                        </div>
+                        <div class="hero-figure anime-element">
+                            <svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
+                                <rect width="528" height="396" style="fill:transparent;" />
+                            </svg>
+                            <div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
+                            <div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
+                            <div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
+                            <div class="hero-figure-box hero-figure-box-05"></div>
+                            <div class="hero-figure-box hero-figure-box-06"></div>
+                            <div class="hero-figure-box hero-figure-box-07"></div>
+                            <div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
+                            <div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-<footer>
-    <div class="footer-icons">
-        <a href="https://www.linkedin.com/in/thomas-conort/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/thomas-cnrt" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:conort.thomas@gmail.com"><i class="far fa-envelope"></i></a>
+            <section class="features section">
+                <div class="container">
+                    <div class="features-inner section-inner has-bottom-divider">
+                        <div class="features-wrap" id="my-projects">
+                            <a href="https://www.boids.conort.tech/" target="_blank" class="feature-link">
+                                <div class="feature text-center is-revealing">
+                                    <div class="feature-inner">
+                                        <div class="feature-icon">
+                                            <img src="src/images/feature-icon-01.svg" alt="Feature 01">
+                                        </div>
+                                        <h4 class="feature-title mt-24">Boids</h4>
+                                        <p class="text-sm mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit.
+                                            Libero modi quos rem dolore dolorum fugiat, nam recusandae et magnam
+                                            necessitatibus quae nihil voluptatum quasi dolor, itaque nulla amet error
+                                            tempora?</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.gol.conort.tech/" target="_blank" class="feature-link">
+                                <div class="feature text-center is-revealing">
+                                    <div class="feature-inner">
+                                        <div class="feature-icon">
+                                            <img src="src/images/feature-icon-02.svg" alt="Feature 02">
+                                        </div>
+                                        <h4 class="feature-title mt-24">Game of Life</h4>
+                                        <p class="text-sm mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                            elit.
+                                            Hic, ipsum distinctio. Dolore assumenda fuga reprehenderit cum! Quam omnis
+                                            nam
+                                            mollitia necessitatibus deleniti tenetur, harum architecto? Eos quia nulla
+                                            ducimus soluta.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.maze.conort.tech/" target="_blank" class="feature-link">
+                                <div class="feature text-center is-revealing">
+                                    <div class="feature-inner">
+                                        <div class="feature-icon">
+                                            <img src="src/images/feature-icon-03.svg" alt="Feature 03">
+                                        </div>
+                                        <h4 class="feature-title mt-24">Maze</h4>
+                                        <p class="text-sm mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                            elit.
+                                            Quos nulla, nihil totam ut veniam voluptates, architecto modi deserunt
+                                            repellat,
+                                            quaerat itaque recusandae obcaecati facere quibusdam corporis iure quae
+                                            ducimus
+                                            dolore!</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="src/images/feature-icon-04.svg" alt="Feature 04">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Project 4</h4>
+                                    <p class="text-sm mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit.
+                                        Libero modi quos rem dolore dolorum fugiat, nam recusandae et magnam
+                                        necessitatibus quae nihil voluptatum quasi dolor, itaque nulla amet error
+                                        tempora?</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="src/images/feature-icon-05.svg" alt="Feature 05">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Project 5</h4>
+                                    <p class="text-sm mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                        elit.
+                                        Hic, ipsum distinctio. Dolore assumenda fuga reprehenderit cum! Quam omnis
+                                        nam
+                                        mollitia necessitatibus deleniti tenetur, harum architecto? Eos quia nulla
+                                        ducimus soluta.</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="src/images/feature-icon-06.svg" alt="Feature 06">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Project 6</h4>
+                                    <p class="text-sm mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                        elit.
+                                        Quos nulla, nihil totam ut veniam voluptates, architecto modi deserunt
+                                        repellat,
+                                        quaerat itaque recusandae obcaecati facere quibusdam corporis iure quae
+                                        ducimus
+                                        dolore!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
-</footer>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer-inner">
+                <div class="brand footer-brand">
+                    <a href="#top">
+                        <img class="header-worker-image" src="src/images/worker.png">
+                    </a>
+                </div>
+                <ul class="footer-social-links list-reset">
+                    <li>
+                        <a href="https://www.linkedin.com/in/thomas-conort/" target="_blank">
+                            <img src="src/images/linkedin-icon.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/thomas-cnrt" target="_blank">
+                            <img src="src/images/github-icon.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:conort.thomas@gmail.com">
+                            <img src="src/images/gmail-icon.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/main.min.js"></script>
+</body>
 
 </html>
